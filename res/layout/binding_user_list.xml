@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/view_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divide_iv">
+
+        <com.yongyida.robot.swipemenulistview.SwipeMenuListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/list_item_selected_transparent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ImageView
+        android:id="@+id/divide_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu_rl"
+        android:src="@drawable/xiaxian" />
+
+    <RelativeLayout
+        android:id="@+id/menu_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/binding_user_list_back_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/binding_user_list_back_btn" />
+
+            <TextView
+                android:id="@+id/binding_user_list_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/binding_user_list_dev"
+                android:textColor="@color/binding_user_list_blue"
+                android:textSize="25sp"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

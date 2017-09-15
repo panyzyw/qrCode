@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+	 >
+  
+    <ImageView 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:src="@drawable/xiaxian"
+         android:layout_marginTop="50dp"
+         />
+     
+     <LinearLayout
+         android:id="@+id/menu_rl"
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         android:orientation="horizontal"
+         android:gravity="center_vertical"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+          >
+      
+		<Button 
+		    android:id="@+id/binding_user_list_back_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/binding_user_list_back_btn"
+		    android:layout_marginLeft="30dp"
+		    android:gravity="center_vertical"
+		    />			    
+		    
+	    <TextView 
+	        android:id="@+id/binding_user_list_tv"
+	        android:text="@string/binding_user_list_dev"
+	        android:textSize="30sp"
+	        android:textColor="@color/binding_user_list_blue"
+	        android:gravity="center_vertical"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_marginLeft="80dp"
+	        />
+	</LinearLayout>
+
+</LinearLayout>

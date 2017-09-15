@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >    
+	<RelativeLayout 
+	    android:id="@+id/rl"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp" >
+	    <TextView
+	        android:id="@+id/user_phone_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="20dp"
+	        android:singleLine="true"
+	        android:textColor="@drawable/binding_user_list_item"
+	        android:duplicateParentState="true"
+	        android:textSize="25sp" />
+	
+	    <TextView
+	        android:id="@+id/user_name_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:singleLine="true"
+	        android:visibility="gone"
+	        android:layout_toRightOf="@+id/user_phone_tv"
+	        android:textColor="@drawable/binding_user_list_item"
+	        android:textSize="25sp" />
+	    
+	     <TextView
+	        android:id="@+id/user_nick_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:singleLine="true"
+	        android:visibility="gone"
+	        android:layout_toRightOf="@+id/user_phone_tv"
+	        android:layout_below="@+id/user_name_tv"
+	        android:textColor="@drawable/binding_user_list_item"
+	        android:textSize="25sp" />
+	     
+	      <TextView
+	        android:id="@+id/user_online_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:singleLine="true"
+	        android:layout_marginRight="50dp"
+	        android:textColor="@drawable/binding_user_list_item"
+	        android:duplicateParentState="true"
+	        android:textSize="25sp" />
+	    
+	</RelativeLayout>
+	
+	<ImageView
+	    android:id="@+id/user_list_divide_iv" 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:src="@drawable/binding_user_list_divide"
+         android:layout_below="@+id/rl"
+         android:layout_marginTop="20dp"
+         />
+	
+</RelativeLayout>

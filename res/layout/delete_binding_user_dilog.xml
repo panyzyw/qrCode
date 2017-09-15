@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root"
+    android:orientation="vertical" >
+   <!--标题  -->
+    <TextView 
+        android:id="@+id/title"
+    	android:name="@+string/dyc_poweroff"
+        android:layout_width="match_parent"
+    	android:layout_height="40dp"
+    	android:background="@drawable/bg_title"
+    	android:textColor="#fff"
+    	android:gravity="center"
+    	android:textStyle="bold"
+    	android:textSize="16sp"
+    	android:text="@string/delete_binding_user"
+	    />
+    
+    <!--中间的内容  -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/message_layout"
+    	android:gravity="center"
+    android:background="#ffffff"
+        >
+        <TextView 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:textColor="#000000"
+    	android:gravity="center"
+    	android:paddingTop="15dp"
+    	android:paddingBottom="15dp"
+    	android:text="@string/delete_warning"
+    	android:id="@+id/message"
+        />
+    </LinearLayout>
+    
+	
+    <!-- 按钮 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:orientation="horizontal"
+    	android:paddingLeft="15dp"
+    	android:paddingRight="15dp"
+    	android:gravity="center_vertical"
+    	android:id="@+id/btns_layout"
+    android:background="#ffffff"
+        >
+        
+        <Button 
+            style="@style/Button"
+    		android:layout_marginRight="80dp"
+    		android:id="@+id/left"
+    		android:text="@string/ok"
+            />
+		<!-- <View android:layout_height="0dp"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    /> -->
+        <Button
+            style="@style/Button"
+    	android:id="@+id/right"
+    	android:text="@string/cancel"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="bg_item_blue">#33CCFF</color>
+    <color name="bg_item_red">#FF3300</color>
+    <color name="bg_item_press">#459EDA</color>
+    <color name="bg_item_normal">#EFEFEF</color>
+    
+    <color name="binding_user_list_blue">#0099FF</color>
+    <color name="binding_user_list_selected_text_blue">#9BBACE</color>
+
+    
+    <color name="list_item_selected_transparent">#00000000</color>
+    
+</resources>
